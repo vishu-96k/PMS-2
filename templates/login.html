@@ -1,0 +1,27 @@
+{% include "header.html" %}
+
+	<div class="container-fluid-login">
+		<div class="row">
+			<div class="col-md-6 bg-dark text-white py-5">
+				<div class="text-center">
+					<h1 class="mb-4">Login</h1>
+					<p>Enter your name and email address to log in.</p>
+				</div>
+			</div>
+			<div class="col-md-6 py-5">
+				<div class="card mx-auto" style="max-width: 400px;">
+					<div class="card-body">
+						<form method="post">
+							{{ form.csrf_token }}
+							<div class="form-group">
+								<b>{{ form.email.label }}</b><br>{{ form.email(class="data-box") }}<br><br>
+                  				<b>{{ form.password.label }}</b><br>{{ form.password(class="data-box") }}<br>
+							</div>
+							{{ form.login(class="btn btn-dark btn-lg sub-btn") }}
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+

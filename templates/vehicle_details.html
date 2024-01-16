@@ -1,0 +1,30 @@
+{% include "header.html" %}
+  <div class="container container-veh">
+    <div class="header">
+      <h1>Vehicle Details</h1>
+    </div>
+    <form method="post" action="vehicle-registration">
+      {{ form.csrf_token }}
+      <div class="form-group">
+        {{ form.vehicle_name.label }}
+        {{ form.vehicle_name(class="form-control", placeholder="Enter vehicle company") }}
+      </div>
+      <div class="form-group">
+        {{ form.vehicle_plate.label }}
+        {{ form.vehicle_plate(class="form-control", placeholder="Enter vehicle plate number")}}
+      </div>
+      <div class="form-group">
+        {{ form.vehicle_type.label }}
+        {{ form.vehicle_type(class="form-control") }}
+      </div>  
+      <div class="form-group">
+        {{ form.rfid_no.label }}
+        {{ form.rfid_no(class="form-control", placeholder="Enter given RFID tag number.") }}
+      </div>
+      <div class="form-group">
+        {{ form.status.label }}
+        {{ form.status(class="form-control", placeholder="Current status of the vehicle.") }}
+      </div>
+      {{ form.add_veh(class="btn btn-dark btn-large sub-btn") }}
+    </form>
+  </div>

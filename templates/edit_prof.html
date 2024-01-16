@@ -1,0 +1,28 @@
+{% include "header.html" %}
+    <div class="container-fluid edit-prof-form">
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <form method="post">
+                {{ form.csrf_token }}
+                <div class="form-group">
+                  {{ form.flat_no.label }}
+                  {{ form.flat_no(class="form-control", placeholder="Enter Flat Number") }}
+                  </div>
+                <div class="form-group">
+                  {{ form.aadhar_no.label }}
+                  {{ form.aadhar_no(class="form-control", placeholder="Enter Aadhar Card Number") }}
+                </div>
+                <div class="form-group">
+                  {{ form.phn_no.label }}
+                  {{ form.phn_no(class="form-control", placeholder="Enter Phone Number") }}
+                </div>
+                  {{ form.update(class="btn btn-dark btn-large sub-btn") }}
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+

@@ -1,0 +1,23 @@
+{% include "header.html" %}
+    <div class="container-fluid prof">
+      <div class="header">
+        <h1 class="text-center mb-0">Profile</h1>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              {% for user in u_list: %}
+              {% if user.id == current_user.id %}
+              <h5 class="card-title">{{ user.name }}</h5>
+              <p class="card-text">Email: {{ user.usr_email }}</p>
+              <p class="card-text">Aadhar card number: {{ user.aadhar_no }}</p>
+              <p class="card-text">Flat number: {{ user.flat_no }}</p>
+              <a href="{{ url_for('edit_prof') }}" class="btn btn-dark">Edit Profile</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

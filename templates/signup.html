@@ -1,0 +1,52 @@
+{% include "header.html" %}
+<div class="signup-pg">
+  <div class="container-fluid bg-dark">
+    <div class="row justify-content-center py-5">
+      <div class="col-md-4 text-center text-white">
+        <h1 class="mb-4">Signup</h1>
+        <p class="lead">Access your vehicle status</p>
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <div class="card-body">
+            <form method="post">
+              {{ form.csrf_token }}
+              <div class="form-group">
+                {{ form.user_name.label }}
+                {{ form.user_name(class="data-box form-control", placeholder="Enter your Username") }}
+              </div>
+              <div class="form-group">
+                {{ form.phn_number.label }}
+                {{ form.phn_number(class="data-box form-control", placeholder="Enter your Username") }}
+              </div>
+              <div class="form-group">
+                {{ form.email.label }}
+                {{ form.email(class="data-box form-control", placeholder="Enter your Email ID") }}
+              </div>
+              <div class="form-group">
+                {{ form.password.label }}
+                {{ form.password(class="data-box form-control", placeholder="Create Password") }}
+              </div>
+              <div class="form-group">
+                {{ form.flat_no.label }}
+                {{ form.flat_no(class="data-box form-control", placeholder="Enter Flat Number") }}
+              </div>
+              <div class="form-group">
+                {{ form.aadhar_no.label }}
+                {{ form.aadhar_no(class="data-box form-control", placeholder="Enter Aadhar Card Number") }}
+              </div>
+              {{ form.signup(class="btn btn-dark btn-large sub-btn")}}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

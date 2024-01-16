@@ -1,0 +1,100 @@
+.container-fluid
+{
+  padding: 30px;
+}
+.offcanvas-header
+{
+  margin-top: 40px;
+}
+.nav-item
+{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar-nav
+{
+  margin-top: 50px;
+}
+.btn-div
+{
+  align-self: center;
+}
+.btn-in
+{
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.navbar-brand
+{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.container-fluid-login
+{
+  padding: 20px;
+  margin-top: 200px;
+}
+.signup-pg
+{
+  margin-top: 100px;
+}
+.form-group
+{
+  padding: 10px;
+}
+.table-div
+{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  margin-right: auto;
+}
+
+.prof
+{
+  margin-top: 200px;
+}
+
+.veh-div
+{
+  margin-top: 200px;
+  padding: 50px 100px;
+}
+.veh-h1
+{
+  padding: 10px 10px;
+}
+.btn-veh
+{
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+
+footer
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container-veh
+{
+  padding: 100px;
+  margin-top: 100px;
+}
+.edit-prof-form
+{
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
